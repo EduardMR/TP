@@ -1,0 +1,31 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "tarea",
+            "otherEntityName": "tarea",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "proyecto"
+        },{
+            "relationshipId": 2,
+            "relationshipName": "usuCreador",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+                "otherEntityField": "login"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nombre",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20160307163139",
+    "dto": "no",
+    "service": "no",
+    "pagination": "infinite-scroll"
+}

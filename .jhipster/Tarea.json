@@ -1,0 +1,42 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "proyecto",
+            "otherEntityName": "proyecto",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "nombre"
+        },
+        {
+            "relationshipId": 1,
+            "relationshipName": "subtarea",
+            "otherEntityName": "subtarea",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "tarea"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nombre",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "notas",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "fechaFin",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20160307162952",
+    "dto": "no",
+    "service": "no",
+    "pagination": "infinite-scroll"
+}

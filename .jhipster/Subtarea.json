@@ -1,0 +1,30 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "tarea",
+            "otherEntityName": "tarea",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "nombre"
+        }
+],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nombre",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "descripcion",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160307162438",
+    "dto": "no",
+    "service": "no",
+    "pagination": "infinite-scroll"
+}
