@@ -1,0 +1,23 @@
+{
+    "taskproyApp": {
+        "subtarea": {
+            "home": {
+                "title": "Subtareas",
+                "createLabel": "Create a new Subtarea",
+                "createOrEditLabel": "Create or edit a Subtarea"
+            },
+            "created": "A new Subtarea is created with identifier {{ param }}",
+            "updated": "A Subtarea is updated with identifier {{ param }}",
+            "deleted": "A Subtarea is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Subtarea {{ id }}?"
+            },
+            "detail": {
+                "title": "Subtarea"
+            },
+            "nombre": "Nombre",
+            "descripcion": "Descripcion",
+            "tarea": "Tarea"
+        }
+    }
+}

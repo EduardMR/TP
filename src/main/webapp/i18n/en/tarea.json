@@ -1,0 +1,25 @@
+{
+    "taskproyApp": {
+        "tarea": {
+            "home": {
+                "title": "Tareas",
+                "createLabel": "Create a new Tarea",
+                "createOrEditLabel": "Create or edit a Tarea"
+            },
+            "created": "A new Tarea is created with identifier {{ param }}",
+            "updated": "A Tarea is updated with identifier {{ param }}",
+            "deleted": "A Tarea is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Tarea {{ id }}?"
+            },
+            "detail": {
+                "title": "Tarea"
+            },
+            "nombre": "Nombre",
+            "notas": "Notas",
+            "fechaFin": "FechaFin",
+            "proyecto": "Proyecto",
+            "subtarea": "Subtarea"
+        }
+    }
+}

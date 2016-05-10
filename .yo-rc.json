@@ -1,0 +1,24 @@
+{
+    "generator-jhipster": {
+        "baseName": "Taskproy",
+        "packageName": "com.mycompany.myapp",
+        "packageFolder": "com/mycompany/myapp",
+        "authenticationType": "session",
+        "hibernateCache": "ehcache",
+        "clusteredHttpSession": "no",
+        "websocket": "no",
+        "databaseType": "sql",
+        "devDatabaseType": "mysql",
+        "prodDatabaseType": "mysql",
+        "searchEngine": "no",
+        "useSass": false,
+        "buildTool": "maven",
+        "frontendBuilder": "grunt",
+        "enableTranslation": true,
+        "enableSocialSignIn": false,
+        "rememberMeKey": "8186f183e71dd247041721f7841c3364059ae68e",
+        "testFrameworks": [
+            "gatling"
+        ]
+    }
+}

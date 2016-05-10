@@ -1,0 +1,26 @@
+{
+    "taskproyApp": {
+        "tarea": {
+            "home": {
+                "title": "Tareas",
+                "createLabel": "Créer un nouveau Tarea",
+                "createOrEditLabel": "Créer ou éditer un Tarea"
+            },
+            "created": "Un nouveau Tarea a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Tarea avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Tarea avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Tarea {{ id }} ?"
+            },
+            "detail": {
+                "title": "Tarea"
+            },
+            "nombre": "Nombre",
+            "notas": "Notas",
+            "fechaFin": "FechaFin",
+            "proyecto": "Proyecto",
+            "subtarea": "Subtarea"
+        }
+    }
+}
+

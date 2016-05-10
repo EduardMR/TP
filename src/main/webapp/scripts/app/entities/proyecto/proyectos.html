@@ -1,0 +1,58 @@
+<div>
+    <h2 translate="taskproyApp.proyecto.home.title">Proyectos</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="proyecto.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span
+                    translate="taskproyApp.proyecto.home.createLabel">Create a new Proyecto</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr jh-sort="predicate" ascending="reverse" callback="reset()">
+                <th jh-sort-by="id"><span translate="global.field.id">ID</span> <span
+                    class="glyphicon glyphicon-sort"></span></th>
+                <th jh-sort-by="nombre"><span translate="taskproyApp.proyecto.nombre">Nombre</span> <span
+                    class="glyphicon glyphicon-sort"></span></th>
+                <th jh-sort-by="usuCreador.login"><span translate="taskproyApp.proyecto.usuCreador">usuCreador</span>
+                    <span class="glyphicon glyphicon-sort"></span></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody infinite-scroll="loadPage(page + 1)" infinite-scroll-disabled="links['last'] == page">
+            <tr ng-repeat="proyecto in proyectos track by proyecto.id">
+                <td><a ui-sref="proyecto.detail({id:proyecto.id})">{{proyecto.id}}</a></td>
+                <td>{{proyecto.nombre}}</td>
+                <td>
+                    {{proyecto.usuCreador.login}}
+                </td>
+                <td>
+                    <button type="submit"
+                            ui-sref="proyecto.detail({id:proyecto.id})"
+                            class="btn btn-info btn-sm">
+                        <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                    </button>
+                    <button type="submit"
+                            ui-sref="proyecto.edit({id:proyecto.id})"
+                            class="btn btn-primary btn-sm">
+                        <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span
+                        translate="entity.action.edit"> Edit</span>
+                    </button>
+                    <button type="submit"
+                            ui-sref="proyecto.delete({id:proyecto.id})"
+                            class="btn btn-danger btn-sm">
+                        <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span
+                        translate="entity.action.delete"> Delete</span>
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

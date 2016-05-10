@@ -1,0 +1,24 @@
+{
+    "taskproyApp": {
+        "subtarea": {
+            "home": {
+                "title": "Subtareas",
+                "createLabel": "Créer un nouveau Subtarea",
+                "createOrEditLabel": "Créer ou éditer un Subtarea"
+            },
+            "created": "Un nouveau Subtarea a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Subtarea avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Subtarea avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Subtarea {{ id }} ?"
+            },
+            "detail": {
+                "title": "Subtarea"
+            },
+            "nombre": "Nombre",
+            "descripcion": "Descripcion",
+            "tarea": "Tarea"
+        }
+    }
+}
+

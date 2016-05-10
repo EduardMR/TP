@@ -1,0 +1,54 @@
+<div>
+    <h2><span translate="taskproyApp.tarea.detail.title">Tarea</span> {{tarea.id}}</h2>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="taskproyApp.tarea.nombre">Nombre</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{tarea.nombre}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="taskproyApp.tarea.notas">Notas</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{tarea.notas}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="taskproyApp.tarea.fechaFin">FechaFin</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{tarea.fechaFin | date:'medium'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="taskproyApp.tarea.proyecto">proyecto</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="proyecto.detail({id:tarea.proyecto.id})">{{tarea.proyecto.nombre}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

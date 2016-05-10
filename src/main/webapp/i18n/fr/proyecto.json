@@ -1,0 +1,24 @@
+{
+    "taskproyApp": {
+        "proyecto": {
+            "home": {
+                "title": "Proyectos",
+                "createLabel": "Créer un nouveau Proyecto",
+                "createOrEditLabel": "Créer ou éditer un Proyecto"
+            },
+            "created": "Un nouveau Proyecto a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Proyecto avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Proyecto avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Proyecto {{ id }} ?"
+            },
+            "detail": {
+                "title": "Proyecto"
+            },
+            "nombre": "Nombre",
+            "tarea": "Tarea",
+            "usuCreador": "UsuCreador"
+        }
+    }
+}
+

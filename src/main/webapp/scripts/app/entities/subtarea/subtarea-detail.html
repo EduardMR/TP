@@ -1,0 +1,46 @@
+<div>
+    <h2><span translate="taskproyApp.subtarea.detail.title">Subtarea</span> {{subtarea.id}}</h2>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="taskproyApp.subtarea.nombre">Nombre</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{subtarea.nombre}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="taskproyApp.subtarea.descripcion">Descripcion</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{subtarea.descripcion}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="taskproyApp.subtarea.tarea">tarea</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="tarea.detail({id:subtarea.tarea.id})">{{subtarea.tarea.nombre}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>
